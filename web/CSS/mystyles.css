@@ -1,0 +1,24 @@
+/* 
+    Author     : potemkyne
+*/
+
+body {
+    background-image: url('hitch.jpg');
+    background-attachment: fixed;
+    padding-top: 70px;
+}
+
+.navbar-fixed-top{
+    border-color: rgba(170,0,0,0);
+    background-color:rgba(170,0,0,0);
+}
+
+@font-face{
+    font-family: someTimeLater;
+    src: url(someTimeLater.otf);
+}
+.someTimeLater{
+    font-family: someTimeLater;
+    color: #FFFFFF;
+    font-size: 15px;
+}
