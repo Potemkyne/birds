@@ -2,12 +2,28 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        <title>{% block title %}Projet BIRDS{% endblock %}</title>
+        {% block stylesheets %}
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+            <link rel="stylesheet"  href="{{ asset('CSS/mystyles.css') }}">
+        {% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        {% block body %}
+
+            <div class="container">
+                <nav class="navbar navbar-inverse navbar-fixed-top">
+                    <ul class="nav navbar-nav navbar-right" >
+                        <li><a href="#">Home</a></li>
+                        <li><a href="{{ path('back_office')}}">Backoffice</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        {% endblock %}
+        {% block javascripts %}
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"/>
+        {% endblock %}
     </body>
 </html>

@@ -1,3 +1,7 @@
-birds_homepage:
+birds_index:
     path:     /
-    defaults: { _controller: BirdsBundle:Default:index }
+    defaults: { _controller: BirdsBundle:Birds:index }
+
+back_office:
+    path:     /back_office
+    defaults: { _controller: BirdsBundle:Birds:backoffice }

@@ -1,16 +1,25 @@
 <?php
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+namespace BirdsBundle\Controller;
+
+
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 
 /**
- * Description of BirdsController
+ * Controleur du bundle BirdsBundle
  *
  * @author potemkyne
  */
-class BirdsController {
-    //put your code here
+class BirdsController extends Controller {
+
+    public function indexAction() {
+        return $this->render("BirdsBundle:Default:index.html.twig");
+    }
+
+    public function backofficeAction() {
+        return $this->render("BirdsBundle:Default:back_office.html.twig");
+    }
+
 }
