@@ -1,0 +1,5 @@
+birds:
+    resource: "@BirdsBundle/Resources/config/routing.yml"
+    prefix:   /
+
+
